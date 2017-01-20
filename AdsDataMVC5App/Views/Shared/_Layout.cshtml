@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+    <link rel="stylesheet" href="~/Content/bootstrap-table.min.css">
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+   
+
+
+</head>
+
+<body>
+
+    <div class="container body-content">
+        @RenderBody()
+        <footer style="text-align:center;">
+            <p>&copy; Web Application Sample @DateTime.Now.Year </p>
+        </footer>
+    </div>
+
+    <script src="~/Scripts/jquery-1.11.0.min.js"></script>
+    <script src="~/Scripts/bootstrap-table.min.js"></script>
+    <script src="~/Scripts/main.js" type="text/javascript"></script>
+   
+    @RenderSection("scripts", required: false)
+</body>
+</html>
